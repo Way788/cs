@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片总览</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}	
+	::selection{
+		background-color: #7193BA;
+		color:#C5C2BC;
+	}
+	#bg{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+	}
+	.content{
+		width: 60%;
+		height: 200%;
+		min-height: 100%;
+		left:20%;
+		position: absolute;
+		background-image:linear-gradient(to bottom, #7193BA 0%, #a8edea 70%);
+		color:#003751;
+		font-size: 20px;
+		padding:10px 50px;
+		line-height: 50px;
+		opacity:0.95;
+		display: grid;
+       	grid-template-columns: repeat(3,30%);
+		grid-gap:5%;
+		grid-template-rows: 20% 20% 20% 20%;
+
+	}
+	.content  img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	.card1{
+		position:relative;
+		width: 100%;
+		border-radius: 30px 5px;
+		overflow: hidden;
+	}
+	.card2{
+		width: 100%;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.card3{
+		width: 100%;
+		position: relative;
+		border-radius: 5px 30px;
+		overflow: hidden;
+	}
+	.card4{
+		width: 100%;
+		position: relative;
+		border-radius: 30px 5px;
+		overflow: hidden;
+	}
+	.card5{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.card6{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 5px 30px;
+		overflow: hidden;
+	}
+	.card7{
+		position:relative;
+		width: 100%;
+		border-radius: 30px 5px;
+		overflow: hidden;
+	}
+	.card8{
+		width: 100%;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.card9{
+		width: 100%;
+		position: relative;
+		border-radius: 5px 30px;
+		overflow: hidden;
+	}
+	.card10{
+		width: 100%;
+		position: relative;
+		border-radius: 30px 5px;
+		overflow: hidden;
+	}
+	.card11{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.card12{
+		width: 100%;
+		position: relative;
+		border-radius: 5px 30px;
+		overflow: hidden;
+	}
+	.content img:hover{
+		transform: scale3d(0.8,0.8,1);
+	}
+	.content .card1:hover{
+		background-image: linear-gradient(to bottom,#FF7901 20%,#00FFE8 100%,#0084FF 10%);
+	}
+	.content .card2:hover{
+		background-image: linear-gradient(to bottom,#ACF901 20%,#00FFE8 100%,#0084FF 10%);
+	}
+	.content .card3:hover{
+		background-image: linear-gradient(to bottom,#12C101 20%,#00FFE8 100%,#0084CC 10%);
+	}
+	.content .card4:hover{
+		background-image: linear-gradient(to bottom,#A81911 20%,#00FFE8 100%,#0084FF 10%);
+	}
+	.content .card5:hover{
+		background-image: linear-gradient(to bottom,#00E9FF 20%,#20CB06 100%,#0084FF 10%);
+	}
+	.content .card6:hover{
+		background-image: linear-gradient(to bottom,#C7AB12 50%,#A0FFE8 100%,#7AE813 30%);
+	}
+	.content .card7:hover{
+		background-image: linear-gradient(to bottom,#AF7901 20%,#A0FFE8 100%,#0984CD 10%);
+	}
+	.content .card8:hover{
+		background-image: linear-gradient(to bottom,#FF7901 20%,#F40808 100%, #F5790A 10%);
+	}
+	.content .card9:hover{
+		background-image: linear-gradient(to bottom,#867995 50%,#8C8B89 100%);
+	}
+	.content .card10:hover{
+		background-image: linear-gradient(to bottom,#663718 50%,#94A0A8 100%,#7BCDF3 40%);
+	}
+	.content .card11:hover{
+		background-image: linear-gradient(to bottom,#23B3EF 20%,#00FFE8 100%,#7BCDF3 10%);
+	}
+	.content .card12:hover{
+		background-image: linear-gradient(to bottom,#974265 10%,#7BF2F4 100%,#929FB4 20%);
+	}
+</style>
+</head>
+
+<body>
+	<div id="bg">
+	<img src="city/长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
+	</div>
+	<div class="content">
+		<div class="card1 item">
+		<img src="city/橘子洲.jpeg" alt="橘子洲">
+		</div>
+		<div class="card2 item">
+		<img src="city/湖南省博物馆.jpeg" alt="湖南省博物馆"></div>
+		<div class="card3 item">
+		<img src="city/岳麓书院.jpeg" alt="岳麓书院"></div>
+		<div class="card4 item">
+		<img src="city/天心阁.jpeg" alt="天心阁"></div>
+		<div class="card5 item">
+		<img src="city/杜甫江阁.jpeg" alt="杜甫江阁"></div>
+		<div class="card6 item">
+		<img src="city/爱晚亭.jpeg" alt="爱晚亭"></div>
+		<div class="card7 item">
+		<img src="city/开福寺.jpeg" alt="开福寺">
+		</div>
+		<div class="card8 item">
+		<img src="city/东方红广场.jpeg" alt="东方红广场">
+		</div>
+		<div class="card9 item">
+		<img src="city/贾谊故居.jpeg" alt="贾谊故居"></div>
+		<div class="card10 item">
+		<img src="city/火宫殿.jpeg" alt="火宫殿"></div>
+		<div class="card11 item">
+		<img src="city/铜官窑古镇.jpeg" alt="铜官窑古镇"></div>
+		<div class="card12 item">
+		<img src="city/太平街.jpeg" alt="太平街">
+		</div>
+	</div>
+</body>
+</html>

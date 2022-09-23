@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>921</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}	
+	::selection{
+		background-color: #7193BA;
+		color:#C5C2BC;
+	}
+	#bg{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+	}
+	.content{
+		width: 60%;
+		height: 150%;
+		margin: 0 20%;
+		min-width: 900px;;
+		position: absolute;
+		background-image: linear-gradient(to bottom, #d7d2cc 30%, #304352 130%);
+		color: #0680CB;
+		opacity:0.95;
+	}
+	#centerpart{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+		color: #0680CB;
+	}
+	.cs{
+		position: absolute;
+		top:-10px;
+		width: 100px;
+		height: 100px;
+		margin: 40px;
+		line-height: 100px;
+		font-size: 40px;
+		z-index: 2;
+		color: #ED3E23;
+		font-weight: 400;
+	}
+	#headpart{
+		width: 100%;
+		height: 300px;
+		position: relative;
+		overflow: hidden;
+	}
+	.headpart img:hover{
+		transform: scale(1.1)
+	}
+	#nav{
+		width: 100%;
+		height:50px;
+		line-height: 50px;
+		position: absolute;
+		background-color: antiquewhite;
+		display: flex;
+	}
+	.navpart ul{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		
+	}
+	.navpart ul>li{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		
+	}
+	.navpart ul>li>a{
+		display: block;
+		width: 200px;
+		justify-content: center;
+		font-size: 15px;
+		text-align: center;
+		background-color: #EC967A;
+		text-decoration: none;
+		border-radius:25px;
+		box-shadow: 0px 1px 2px 3px #CB967A;
+	}
+	.navpart ul>li>a:hover{
+		color: #E28F77;
+		background-color: #211B43;
+		text-decoration: underline;
+		text-decoration-color: #EA917D;
+		box-shadow: 0px 3px 2px 3px #111B43;
+		
+	}
+	.food{
+		width: 90%;
+		height: 120%;
+		top:60px;
+		position: relative;
+		margin:0 5%;
+		color:#F20505;
+		font-weight:700;
+		overflow: hidden;
+		
+	}
+	.food td{
+		box-shadow: 0px -1px 6px 1px #c9c1c9;
+	}
+	.food td>img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		
+	}
+	.food td>img:hover{
+		transform: scale(1.05);
+	}
+	.food td:hover{
+		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+		color: #C75737;
+	}
+</style>
+</head>
+
+<body>
+	<div id="bg">
+	<img src="city/长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1"></div>
+	<div class="content">
+	<div class="centerpart" id="centerpart">
+		<div class="cs">
+		<h1>长沙</h1>
+		</div>
+		<div class="headpart" id="headpart">
+		<img src="city/长沙head图1.jpeg" alt="长沙图1" style="width: 100%;height: 100%;object-fit: cover;">
+		</div>
+
+		<div class="topic">
+			<div class="navpart" id="nav">
+			<ul>
+				<li><a href="">长沙介绍</a></li>
+				<li><a href="">行政区域</a></li>
+				<li><a href="">景点介绍</a></li>
+				<li><a href="">图片总览</a></li>
+			</ul>
+			</div>
+			<div class="food">
+
+			<table align="center" border="3" width="100%" height="600px" cellspacing="10px" >
+				<tr>
+					<td width="30%"><img src="city/food1.jpeg" alt="food1">
+					</td>
+					<td width="30%"><img src="city/food2.jpeg" alt="food2"></td>
+					<td width="30%"><img src="city/food3.jpeg" alt="food3"></td>
+				</tr>
+				<tr align="center" bgcolor="#06979C">
+					<td>茶颜悦色</td>	
+					<td>糖油粑粑</td>
+					<td>臭豆腐</td>
+				</tr>
+				<tr>
+					<td><img src="city/food4.jpeg" alt="food4"></td>
+					<td><img src="city/food5.jpeg" alt="food5"></td>
+					<td><img src="city/food6.jpeg" alt="food6"></td>
+				</tr>
+				<tr align="center" bgcolor="#06979C">
+					<td>口味虾</td>
+					<td>剁椒鱼头</td>
+					<td>猪油拌粉</td>
+				</tr>
+				<tr>
+					<td><img src="city/food7.jpeg" alt="food7"></td>
+					<td><img src="city/food8.jpeg" alt="food8"></td>
+					<td><img src="city/food9.jpeg" alt="food9"></td>
+				</tr>
+				<tr align="center" bgcolor="#06979C" >
+					<td>辣椒炒肉</td>
+					<td>小炒黄牛肉</td>
+					<td>葱油粑粑</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

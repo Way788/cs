@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>景点介绍</title>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	::selection{
+		background-color: #7193BA;
+		color:#C5C2BC;
+	}
+	#bg{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.content{
+		width: 60%;
+		height: 300%;
+		min-height: 100%;
+		min-width: 600px;
+		left:20%;
+		position: absolute;
+		background-image:linear-gradient(to bottom, #7193BA 0%, #a8edea 70%);
+		color:#003751;
+		padding:40px 50px;
+		line-height: 40px;
+		opacity:0.95;
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card1{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card2{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card3{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card4{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card5{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card6{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card7{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card8{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card9{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card10{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card11{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.card12{
+		width: 30%;
+		height: 300px;
+		position: relative;
+		background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+		color:#9C8570;
+		border-radius: 50px;
+		overflow: hidden;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+	}
+	.hover{
+		width: 0;
+		height: 0;
+		position: relative;
+		transform: scaleX(0);
+		transform-origin: top; 
+		transition: all 0.1s ;
+	}
+	.show{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.text ul{
+		display: block;
+	}
+	.text  ul>li{
+		display: inline-block;
+		width: 60%;
+		height: 30px;
+		line-height: 30px;
+		margin: 5px;
+		border-radius: 10px;
+		background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	}
+	.text ul>li:hover{
+		background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+		background-blend-mode: screen;
+	}
+</style>
+</head>
+
+<body>
+	<div id="bg">
+	<img src="city/长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
+	</div>
+	<div class="content">
+	<div class="card1" id="card1">
+		<img src="city/橘子洲.jpeg" alt="橘子洲" id="img1" class="">
+		<div class="text" id="text1">
+			<h1>橘子洲</h1>
+			<ul>
+				<li>问天台</li>
+				<li>百米喷泉</li>
+				<li>沙滩公园</li>
+				<li>艺术雕塑</li>
+				<li>橘洲公园</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card2" id="card2">
+		<img src="city/湖南省博物馆.jpeg" alt="湖南省博物馆" id="img2" class="">
+		<div class="text" id="text2">
+			<h1>湖南省博物馆</h1>
+			<ul>
+				<li>长沙马王堆汉墓陈列</li>
+				<li>湖南人</li>
+				<li>听见湖湘</li>
+				<li>无限佳丽</li>
+				<li>花魂鸟魄</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card3" id="card3">
+		<img src="city/岳麓书院.jpeg" alt="岳麓书院" id="img3" class="">
+		<div class="text" id="text3">
+			<h1>岳麓书院</h1>
+			<ul>
+				<li>惟楚有材</li>
+				<li>于斯为盛</li>
+				<li>实事求是</li>
+				<li>学达性天</li>
+				<li>道南正脉</li>
+
+			</ul>
+		</div>
+	</div>
+		<div class="card4" id="card4">
+		<img src="city/天心阁.jpeg" alt="天心阁" id="img4" class="">
+		<div class="text" id="text4">
+			<h1>天心阁</h1>
+			<ul>
+				<li>崇烈门</li>
+				<li>崇烈塔</li>
+				<li>崇烈亭</li>
+				<li>映山楼</li>
+				<li>名人石刻画廊</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card5" id="card5">
+		<img src="city/杜甫江阁.jpeg" alt="杜甫江阁" id="img5" class="">
+		<div class="text" id="text5">
+			<h1>杜甫江阁</h1>
+			<ul>
+				<li>书法碑廊</li>
+				<li>纪念大厅</li>
+				<li>杜甫生平专题展示</li>
+				<li>集雅轩</li>
+			</ul>
+		</div>
+	</div>
+		<div class="card6" id="card6">
+		<img src="city/爱晚亭.jpeg" alt="爱晚亭" id="img6" class="">
+		<div class="text" id="text6">
+			<h1>爱晚亭</h1>
+			<ul>
+				<li>停车坐爱枫林晚</li>
+				<li>霜叶红于二月花</li>
+				<li>《沁园春·长沙》</li>
+				<li>原名红叶亭</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card7" id="card7">
+		<img src="city/开福寺.jpeg" alt="开福寺" id="img7" class="">
+		<div class="text" id="text7">
+			<h1>开福寺</h1>
+			<ul>
+				<li>紫微山</li>
+				<li>碧浪湖</li>
+				<li>白莲池</li>
+				<li>龙泉井</li>
+				<li>舍利塔</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card8" id="card8">
+		<img src="city/东方红广场.jpeg" alt="东方红广场" id="img8" class="">
+		<div class="text" id="text8">
+			<h1>东方红广场</h1>
+		</div>
+	</div>
+	<div class="card9" id="card9">
+		<img src="city/贾谊故居.jpeg" alt="贾谊故居" id="img9" class="">
+		<div class="text" id="text9">
+			<h1>贾谊故居</h1>
+			<ul>
+				<li>贾太傅祠</li>
+				<li>太傅殿</li>
+				<li>寻秋草堂</li>
+				<li>碑廊</li>
+			</ul>
+		</div>
+	</div>
+	<div class="card10" id="card10">
+		<img src="city/火宫殿.jpeg" alt="火宫殿" id="img10" class="">
+		<div class="text" id="text10">
+			<h1>火宫殿</h1>
+			<ul>
+				<li>火宫殿庙会</li>
+				<li>火宫殿救火会</li>
+				<li>传统早茶</li>
+				<li>风味小吃</li>
+			</ul>
+		</div>
+	</div>
+		<div class="card11" id="card11">
+		<img src="city/铜官窑古镇.jpeg" alt="铜官窑古镇" id="img11" class="">
+		<div class="text" id="text11">
+			<h1>铜官窑古镇</h1>
+			<ul>
+				<li>陶瓷古龙窑</li>
+				<li>陶瓷古窑遗址</li>
+				<li>铜官古街市</li>
+				<li>古遗址</li>
+			</ul>
+		</div>
+	</div>
+		<div class="card12" id="card12">
+		<img src="city/太平街.jpeg" alt="太平街" id="img12" class="">
+		<div class="text" id="text12">
+			<h1>太平街</h1>
+			<ul>
+				<li>问天台</li>
+				<li>百米喷泉</li>
+				<li>沙滩公园</li>
+				<li>艺术雕塑</li>
+				<li>橘洲公园</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<script>
+			var text1=document.getElementById("text1");
+			var img1=document.getElementById("img1");
+			var card1=document.getElementById("card1");
+			card1.onmousemove=function(){
+				img1.className="hover";
+				text1.style.display="block";
+
+			}
+			card1.onmouseout=function(){
+				img1.className="show";
+				text1.style.display="none";
+			}
+			
+			var text2=document.getElementById("text2");
+			var img2=document.getElementById("img2");
+			var card2=document.getElementById("card2");
+			card2.onmousemove=function(){
+				img2.className="hover";
+				text2.style.display="block";
+
+			}
+			card2.onmouseout=function(){
+				img2.className="show";
+				text2.style.display="none";
+			}
+		
+			var text3=document.getElementById("text3");
+			var img3=document.getElementById("img3");
+			var card3=document.getElementById("card3");
+			card3.onmousemove=function(){
+				img3.className="hover";
+				text3.style.display="block";
+
+			}
+			card3.onmouseout=function(){
+				img3.className="show";
+				text3.style.display="none";
+			}
+			
+			var text2=document.getElementById("text2");
+			var img2=document.getElementById("img2");
+			var card2=document.getElementById("card2");
+			card2.onmousemove=function(){
+				img2.className="hover";
+				text2.style.display="block";
+
+			}
+			card2.onmouseout=function(){
+				img2.className="show";
+				text2.style.display="none";
+			}
+			
+			var text4=document.getElementById("text4");
+			var img4=document.getElementById("img4");
+			var card4=document.getElementById("card4");
+			card4.onmousemove=function(){
+				img4.className="hover";
+				text4.style.display="block";
+
+			}
+			card4.onmouseout=function(){
+				img4.className="show";
+				text4.style.display="none";
+			}
+			
+			var text5=document.getElementById("text5");
+			var img5=document.getElementById("img5");
+			var card5=document.getElementById("card5");
+			card5.onmousemove=function(){
+				img5.className="hover";
+				text5.style.display="block";
+
+			}
+			card5.onmouseout=function(){
+				img5.className="show";
+				text5.style.display="none";
+			}
+			
+			var text6=document.getElementById("text6");
+			var img6=document.getElementById("img6");
+			var card6=document.getElementById("card6");
+			card6.onmousemove=function(){
+				img6.className="hover";
+				text6.style.display="block";
+
+			}
+			card6.onmouseout=function(){
+				img6.className="show";
+				text6.style.display="none";
+			}
+			
+			var text7=document.getElementById("text7");
+			var img7=document.getElementById("img7");
+			var card7=document.getElementById("card7");
+			card7.onmousemove=function(){
+				img7.className="hover";
+				text7.style.display="block";
+
+			}
+			card7.onmouseout=function(){
+				img7.className="show";
+				text7.style.display="none";
+			}
+			
+			var text8=document.getElementById("text8");
+			var img8=document.getElementById("img8");
+			var card8=document.getElementById("card8");
+			card8.onmousemove=function(){
+				img8.className="hover";
+				text8.style.display="block";
+
+			}
+			card8.onmouseout=function(){
+				img8.className="show";
+				text8.style.display="none";
+			}
+			
+			var text9=document.getElementById("text9");
+			var img9=document.getElementById("img9");
+			var card9=document.getElementById("card9");
+			card9.onmousemove=function(){
+				img9.className="hover";
+				text9.style.display="block";
+
+			}
+			card9.onmouseout=function(){
+				img9.className="show";
+				text9.style.display="none";
+			}
+			
+			var text10=document.getElementById("text10");
+			var img10=document.getElementById("img10");
+			var card10=document.getElementById("card10");
+			card10.onmousemove=function(){
+				img10.className="hover";
+				text10.style.display="block";
+
+			}
+			card10.onmouseout=function(){
+				img10.className="show";
+				text10.style.display="none";
+			}
+			
+			var text11=document.getElementById("text11");
+			var img11=document.getElementById("img11");
+			var card11=document.getElementById("card11");
+			card11.onmousemove=function(){
+				img11.className="hover";
+				text11.style.display="block";
+
+			}
+			card11.onmouseout=function(){
+				img11.className="show";
+				text11.style.display="none";
+			}
+			
+			var text12=document.getElementById("text12");
+			var img12=document.getElementById("img12");
+			var card12=document.getElementById("card12");
+			card12.onmousemove=function(){
+				img12.className="hover";
+				text12.style.display="block";
+
+			}
+			card12.onmouseout=function(){
+				img12.className="show";
+				text12.style.display="none";
+			}
+			
+	</script>
+</body>
+</html>
