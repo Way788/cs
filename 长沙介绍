@@ -34,7 +34,7 @@
 
 <body>
 	<div id="bg">
-	<img src="/长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
+	<img src="长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
 	</div>
 	<div class="content">
 		长沙，别称星城，湖南省辖地级市、省会、特大城市， <br>
