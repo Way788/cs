@@ -160,36 +160,36 @@
 
 <body>
 	<div id="bg">
-	<img src="/长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
+	<img src="长沙背景1.jpeg" alt="长沙背景" style="width: 100%;height: 100%;object-fit: cover; z-index: -1">
 	</div>
 	<div class="content">
 		<div class="card1 item">
-		<img src="/橘子洲.jpeg" alt="橘子洲">
+		<img src="橘子洲.jpeg" alt="橘子洲">
 		</div>
 		<div class="card2 item">
-		<img src="/湖南省博物馆.jpeg" alt="湖南省博物馆"></div>
+		<img src="湖南省博物馆.jpeg" alt="湖南省博物馆"></div>
 		<div class="card3 item">
-		<img src="/岳麓书院.jpeg" alt="岳麓书院"></div>
+		<img src="岳麓书院.jpeg" alt="岳麓书院"></div>
 		<div class="card4 item">
-		<img src="/天心阁.jpeg" alt="天心阁"></div>
+		<img src="天心阁.jpeg" alt="天心阁"></div>
 		<div class="card5 item">
-		<img src="/杜甫江阁.jpeg" alt="杜甫江阁"></div>
+		<img src="杜甫江阁.jpeg" alt="杜甫江阁"></div>
 		<div class="card6 item">
-		<img src="/爱晚亭.jpeg" alt="爱晚亭"></div>
+		<img src="爱晚亭.jpeg" alt="爱晚亭"></div>
 		<div class="card7 item">
-		<img src="/开福寺.jpeg" alt="开福寺">
+		<img src="开福寺.jpeg" alt="开福寺">
 		</div>
 		<div class="card8 item">
-		<img src="/东方红广场.jpeg" alt="东方红广场">
+		<img src="东方红广场.jpeg" alt="东方红广场">
 		</div>
 		<div class="card9 item">
-		<img src="/贾谊故居.jpeg" alt="贾谊故居"></div>
+		<img src="贾谊故居.jpeg" alt="贾谊故居"></div>
 		<div class="card10 item">
-		<img src="/火宫殿.jpeg" alt="火宫殿"></div>
+		<img src="火宫殿.jpeg" alt="火宫殿"></div>
 		<div class="card11 item">
-		<img src="/铜官窑古镇.jpeg" alt="铜官窑古镇"></div>
+		<img src="铜官窑古镇.jpeg" alt="铜官窑古镇"></div>
 		<div class="card12 item">
-		<img src="/太平街.jpeg" alt="太平街">
+		<img src="太平街.jpeg" alt="太平街">
 		</div>
 	</div>
 </body>
